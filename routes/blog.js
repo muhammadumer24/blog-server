@@ -9,6 +9,6 @@ router.post("/add", authorize, authenticate, add)
 router.post("/login", authenticate, login)
 router.get("/authorize", authorize, authenticate, userInfo)
 router.get("/getData", getData)
-router.get("/blog/:title", getSingleBlog)
+router.get("/blog/:id", getSingleBlog)
 
 module.exports = router

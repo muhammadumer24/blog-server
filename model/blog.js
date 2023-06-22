@@ -6,8 +6,21 @@ const blogSchema = new mongoose.Schema({
     required: true,
     trim: true,
   },
+  coverPhoto: {
+    type: String,
+    required: true,
+  },
   content: {
     type: String,
+    required: true,
+  },
+  views: {
+    type: Number,
+    required: true,
+    default: 0,
+  },
+  createdAt: {
+    type: Number,
     required: true,
   },
 })
